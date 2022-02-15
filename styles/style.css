@@ -1,3 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,7 +23,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -14,12 +31,69 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f2f2f2;
 }
 
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 183px;
+  height: 32px;
+}
+
+.header__title {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 700;
+  max-width: 730px;
+  width: 100%;
+  margin-left: 64px;
+  z-index: 3;
+}
+
+.header__subtitle {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 3;
+}
+.link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
+}
+.header__main-illustration {
+  width: 100%;
+  max-width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +102,90 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+/*== section description ==*/
+.description {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.description__title {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
+}
+
+.description__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.description__subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.description__subtitle:nth-child(2) {
+  padding: 30px 0;
+}
+
+.description__subtitle span {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*== section digits ==*/
+.digits {
+  padding-top: 100px;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.digits__title {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.digits__subtitle {
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 20px;
 }

@@ -6,7 +6,12 @@ h5,
 h6 {
   margin: 0;
 }
-
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
 p {
   margin: 0;
 }
@@ -31,12 +36,11 @@ a {
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
   background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .header__logo {
@@ -52,39 +56,40 @@ a {
 }
 
 .header__title {
+  width: 730px;
+  margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
-  max-width: 730px;
-  width: 100%;
-  margin-left: 64px;
   z-index: 3;
 }
 
 .header__subtitle {
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
-  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   z-index: 3;
 }
+
 .link {
   font-size: 18px;
   font-weight: 400;
   color: #2f80ed;
 }
+
 .header__main-illustration {
-  width: 100%;
-  max-width: 765px;
+  width: 765px;
   height: 608px;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 2;
 }
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -96,21 +101,12 @@ a {
   z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /*== section description ==*/
 .description {
-  padding-top: 100px;
+  width: 80%;
+  margin: 100px auto;
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .description__title {
@@ -143,34 +139,32 @@ a {
 
 /*== section digits ==*/
 .digits {
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 1100px;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
-
-.digits__title {
-  text-align: center;
+.title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
+  text-align: center;
 }
 
-.digits__subtitle {
-  text-align: center;
+.subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
   padding-top: 20px;
+  text-align: center;
 }
 
 .table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 450px;
 }
 
 .table__cell {
@@ -190,6 +184,7 @@ a {
   font-weight: 400;
   padding-top: 20px;
 }
+
 /*== section feynman ==*/
 .feynman {
   padding-top: 100px;
@@ -232,8 +227,122 @@ a {
   position: absolute;
   right: 40px;
   top: 50%;
-  bottom: 50%;
   line-height: 51px;
   font-size: 36px;
+  z-index: 3;
+}
+
+/*== section kaufman ==*/
+.kaufman {
+  padding: 90px 0;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__bg {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 1;
+}
+
+.kaufman-content {
+  position: relative;
+  z-index: 3;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.title_theme_dark,
+.subtitle_theme_dark {
+  color: white;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+/*== section footer ==*/
+.footer {
+  padding: 60px 0 40px;
+  background-color: #1f1f1f;
+}
+
+.footer-content {
+  width: 90%;
+  min-height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.copyright__author {
+  line-height: 25px;
+  font-size: 18px;
   font-weight: 400;
+  color: white;
+  padding: 18px 0;
+}
+
+.footer__heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer__links {
+  padding: 20px 0 16px;
+}
+
+.footer__link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+.social__link {
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left;
+}
+.social__link::before {
+  content: "";
+  padding-left: 26px;
+}
+
+.social__link-fb {
+  background-image: url("../images/facebook_color_white.svg");
+}
+
+.social__link-vk {
+  background-image: url("../images/vk_color_white.svg");
+}
+
+.social__link-inst {
+  background-image: url("../images/instagram_color_white.svg");
 }

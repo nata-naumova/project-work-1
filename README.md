@@ -9,4 +9,4 @@
 >> 5. Блок kaufman
 >> 6. Блок footer
 ---
-Результат работы мможно посмотреть [здесь](https://nata-naumova.github.io/project-work-1/ "Научиться учиться")
+Результат работы можно посмотреть [здесь](https://nata-naumova.github.io/project-work-1/ "Научиться учиться")

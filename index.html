@@ -10,9 +10,7 @@
 <body>
   <div class="page">
     <header class="header">
-      <a href="#" class="header__logo">
-        <img src="images/logo_place_header.svg" alt="Логотип ЯндексПрактикум" class="logo">
-      </a>
+      <a href="#"><img src="images/logo_place_header.svg" alt="Логотип ЯндексПрактикум" class="logo header__logo"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и&nbsp;эффективные подходы к&nbsp;обучению вы&nbsp;можете использовать в&nbsp;своей жизни? <a href="#" class="link">Узнать &rarr;</a></p>
       <img src="images/header-image.png" alt="Грустный мальчик и собака" class="header__main-illustration">
@@ -20,11 +18,13 @@
     </header>
     <main class="content">
       <section class="description">
-        <h2 class="description__title">Главные проблемы в&nbsp;обучении</h2>
-        <div class="description__main-text">
-          <p class="description__subtitle">Ни&nbsp;в&nbsp;школе, ни&nbsp;в&nbsp;институте нас не&nbsp;учат тому, как правильно изучать материал. Мы&nbsp;готовимся к&nbsp;экзаменам и&nbsp;учим билеты. Мы&nbsp;тренируемся решать однообразные задачи, чтобы лучше сдать тест, но&nbsp;часто в&nbsp;итоге это не&nbsp;дает нам реального знания. Зубрежка быстро выветривается и&nbsp;не&nbsp;приносит пользы.</p>
-          <p class="description__subtitle"><span>Вывод:</span> учиться тоже нужно уметь, но&nbsp;почему-то этому мало где учат. Что с&nbsp;этим делать?</p>
-          <p class="description__subtitle">Конкретные техники и&nbsp;упражнения помогают изменить подход к&nbsp;обучению, сделать его эффективным и&nbsp;захватывающим. Эти&nbsp;же техники применяются на&nbsp;примере обучения в&nbsp;Практикуме.</p>
+        <div class="two-columns">
+          <h2 class="two-columns__brief">Главные проблемы в&nbsp;обучении</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">Ни&nbsp;в&nbsp;школе, ни&nbsp;в&nbsp;институте нас не&nbsp;учат тому, как правильно изучать материал. Мы&nbsp;готовимся к&nbsp;экзаменам и&nbsp;учим билеты. Мы&nbsp;тренируемся решать однообразные задачи, чтобы лучше сдать тест, но&nbsp;часто в&nbsp;итоге это не&nbsp;дает нам реального знания. Зубрежка быстро выветривается и&nbsp;не&nbsp;приносит пользы.</p>
+            <p class="two-columns__paragraph"><span>Вывод:</span> учиться тоже нужно уметь, но&nbsp;почему-то этому мало где учат. Что с&nbsp;этим делать?</p>
+            <p class="two-columns__paragraph">Конкретные техники и&nbsp;упражнения помогают изменить подход к&nbsp;обучению, сделать его эффективным и&nbsp;захватывающим. Эти&nbsp;же техники применяются на&nbsp;примере обучения в&nbsp;Практикуме.</p>
+          </div>
         </div>
       </section>
 
@@ -80,8 +80,7 @@
         <img src="images/kaufman-triangle.svg" alt="Голубой треугольник на фоне" class="kaufman__bg">
         <h2 class="title title_theme_dark">Принципы обучения</h2>
         <p class="subtitle subtitle_theme_dark">от Джоша Кауфмана</p>
-        <div class="kaufman-content">
-          <div class="table">
+          <div class="table table_theme_dark">
             <div class="table__cell_theme_dark">
               <h3 class="table__heading">1</h3>
               <p class="table__text">Выберите привлекательный проект.</p>
@@ -122,35 +121,33 @@
               <h3 class="table__heading">10</h3>
               <p class="table__text">Уделяйте внимание количеству и скорости.</p>
             </div>
-          </div>
         </div>
-        
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer__content copyright">
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_copyright">
           <a href="#" class="footer__logo">
-            <img src="images/logo_place_footer.svg" alt="Логотип ЯндексПрактикум" class="logo">
+            <img src="images/logo_place_footer.svg" alt="Логотип ЯндексПрактикум" class="logo logo_place_footer">
           </a>
-          <p class="copyright__author">&copy;2022. Ната Наумова</p>
+          <p class="footer__author">&copy; 2022. Ната Наумова</p>
         </div>
   
-        <div class="footer__content">
-          <h2 class="footer__heading">О практикуме</h2>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Главная</a></li>
-            <li><a href="#" class="footer__link">Концепция</a></li>
-            <li><a href="#" class="footer__link">Наставники</a></li>
+        <nav class="footer__column footer__column_content_info">
+          <h2 class="footer__column-heading">О практикуме</h2>
+          <ul class="footer__column-links">
+            <li><a href="#" class="footer__column-link">Главная</a></li>
+            <li><a href="#" class="footer__column-link">Концепция</a></li>
+            <li><a href="#" class="footer__column-link">Наставники</a></li>
           </ul>
-        </div>
+        </nav>
   
-        <div class="footer__content">
-          <h2 class="footer__heading">Соцсети</h2>
-          <ul class="footer__links social">
-            <li><a href="#" class="footer__link social__link social__link-fb">Facebook</a></li>
-            <li><a href="#" class="footer__link social__link social__link-vk">ВКонтакте</a></li>
-            <li><a href="#" class="footer__link social__link social__link-inst">Instagram</a></li>
+        <div class="footer__column footer__column_content_social">
+          <h2 class="footer__column-heading">Соцсети</h2>
+          <ul class="footer__column-links">
+            <li><a href="#" class="footer__column-link social__link social__link-fb">Facebook</a></li>
+            <li><a href="#" class="footer__column-link social__link social__link-vk">ВКонтакте</a></li>
+            <li><a href="#" class="footer__column-link social__link social__link-inst">Instagram</a></li>
           </ul>
         </div>
       </div>

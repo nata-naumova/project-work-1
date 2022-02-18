@@ -1,21 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-ul {
-  margin: 0;
-}
-li {
-  list-style: none;
-}
-p {
-  margin: 0;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -38,21 +20,22 @@ p {
   position: relative;
 }
 
-.logo__link {
-  text-decoration: none;
+.logo {
+  width: 183px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
+  background-image: url("../images/logo_place_header.svg");
   position: absolute;
   top: 30px;
   left: 64px;
 }
-.logo {
-  width: 183px;
-  height: 32px;
-}
 
 .header__title {
+  margin: 0;
   max-width: 730px;
   margin-left: 64px;
   line-height: 96px;
@@ -62,6 +45,7 @@ p {
 }
 
 .header__subtitle {
+  margin: 0;
   max-width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -118,6 +102,7 @@ p {
   width: 80%;
 }
 .two-columns__brief {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -130,6 +115,7 @@ p {
 }
 
 .two-columns__paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
@@ -154,6 +140,7 @@ p {
   align-items: center;
 }
 .section-title {
+  margin: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
@@ -161,6 +148,7 @@ p {
 }
 
 .section-subtitle {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
@@ -183,6 +171,7 @@ p {
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
@@ -191,6 +180,7 @@ p {
   z-index: 2;
 }
 .table__text {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -202,8 +192,8 @@ p {
 /*== section feynman ==*/
 .feynman {
   padding-top: 100px;
+  min-height: 790px;
   position: relative;
-  height: 790px;
   overflow: hidden;
   background-color: #f2f2f2;
 }
@@ -228,6 +218,7 @@ p {
 }
 
 .feynman__subtitle {
+  margin: 0;
   padding-top: 70px;
   text-align: center;
   line-height: 51px;
@@ -307,9 +298,8 @@ p {
   justify-content: space-between;
 }
 
-.footer__logo {
-  width: 183px;
-  height: 35px;
+.logo_place_footer {
+  background-image: url("../images/logo_place_footer.svg");
 }
 
 .footer__column {
@@ -323,6 +313,7 @@ p {
 }
 
 .footer__author {
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
@@ -331,6 +322,7 @@ p {
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -339,6 +331,8 @@ p {
 
 .footer__column-links {
   padding: 20px 0 16px;
+  margin: 0;
+  list-style: none;
 }
 
 .footer__column-link {

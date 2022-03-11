@@ -36,9 +36,15 @@
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/theme/table_theme_dark.css);
 @import url(../blocks/table/cell/table__cell.css);
-@import url(../blocks/table/cell/_theme/table__cell_theme_dark.css);
+<<<<<<< HEAD
+@import url(../blocks/table/cell/theme/table__cell_theme_dark.css);
 @import url(../blocks/table/heading/table__heading.css);
 @import url(../blocks/table/heading/theme/table__heading_theme_dark.css);
+=======
+@import url(../blocks/table/cell/theme/table__cell_theme_dark.css);
+@import url(../blocks/table/heading/table__heading.css);
+@import url(../blocks/table/heading/theme/table__heading_theme_dark.css);
+>>>>>>> c897140ed5bfe0e222d8a19918b8579f7e372464
 @import url(../blocks/table/text/table__text.css);
 @import url(../blocks/table/text/theme/table__text_theme_dark.css);
 

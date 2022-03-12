@@ -12,7 +12,3 @@
 .footer__column-link:hover {
   color: #2f80ed;
 }
-
-.footer__column-link:hover .footer__social-icon {
-  fill: #2f80ed;
-}

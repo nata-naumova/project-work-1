@@ -7,9 +7,11 @@
   font-size: 36px;
   color: #2f80ed;
   z-index: 3;
-  transition: padding-right 0.3s ease-in-out;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .feynman__link:hover {
   padding-right: 5px;
+  opacity: 0.5;
 }

@@ -5,6 +5,6 @@
   max-width: 240px;
 }
 
-.cards__item:nth-last-of-type(3) {
+.cards__item:nth-last-of-type(3n) {
   margin-right: 0;
 }
